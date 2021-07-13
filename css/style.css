@@ -1,0 +1,198 @@
+/* =======================
+ Google Fonts | Poppins
+======================= */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* =======================
+Utilities & Global CSS
+======================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-blue: #2d25a0;
+  --main-pink: #e02c6d;
+  --main-white: #ffffff;
+  --main-heading: #18191f;
+  --secondary-heading: #0a0826;
+  --main-text: #6c6c6c;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.container {
+  width: 1160px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-basis-50 {
+  flex-basis: 50%;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 24px;
+  background: var(--main-pink);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-white);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
+}
+.btn-icon {
+  margin-left: 8px;
+}
+.btn-icon i {
+  font-size: 16px;
+}
+.btn:hover .btn-icon i {
+  transform: translateX(5px);
+  -webkit-transform: translateX(5px);
+  -moz-transform: translateX(5px);
+  -ms-transform: translateX(5px);
+  -o-transform: translateX(5px);
+}
+
+/* =======================
+Header Start
+======================= */
+header {
+  background-image: url(/images/banner-image.png);
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 0;
+  z-index: 9999999;
+}
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a img {
+  width: 21%;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin-right: 12px;
+}
+nav ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--main-white);
+}
+.toggle-menu {
+  color: var(--main-white);
+  font-size: 24px;
+  display: none;
+}
+/* =======================
+Header End
+======================= */
+
+/* =======================
+Main Start
+======================= */
+
+/* ===== Banner Section ===== */
+.banner-section {
+  padding: 150px 0;
+  background-image: url(/images/banner-image.png);
+  background-size: cover;
+}
+.banner-text h2 {
+  font-size: 64px;
+  color: var(--main-white);
+  font-weight: 700;
+  margin-bottom: 27px;
+}
+
+/* ===== Player Section ===== */
+.player-section {
+  margin-top: 70px;
+}
+.players-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 27px 30px;
+}
+.player {
+  padding: 15px;
+  background: var(--main-white);
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.player-details {
+  margin: 16px 0 10px;
+}
+.player-details h2 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--main-heading);
+}
+.player-details p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--main-text);
+}
+
+/* ===== Highlighted Section ===== */
+.highlighted-section {
+  padding: 100px 0;
+}
+.highlighted-text h2 {
+  color: var(--secondary-heading);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.highlighted-text p {
+  font-size: 16px;
+  color: var(--main-text);
+  margin-bottom: 24px;
+}
+
+/* =======================
+Main End
+======================= */
+
+/* =======================
+Footer Start
+======================= */
+
+/* =======================
+Footer End
+======================= */
