@@ -82,7 +82,7 @@ img {
 Header Start
 ======================= */
 header {
-  background-image: url(/images/banner-image.png);
+  background-image: url(../images/banner-image.png);
   background-size: cover;
   position: fixed;
   top: 0;
@@ -126,7 +126,7 @@ Main Start
 /* ===== Banner Section ===== */
 .banner-section {
   padding: 150px 0;
-  background-image: url(/images/banner-image.png);
+  background-image: url(../images/banner-image.png);
   background-size: cover;
 }
 .banner-text h2 {
