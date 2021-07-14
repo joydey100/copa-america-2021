@@ -28,6 +28,7 @@ ul {
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 img {
   width: 100%;
