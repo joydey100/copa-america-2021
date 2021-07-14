@@ -414,10 +414,6 @@ Responsive Design with media query
   .banner-footer-img img {
     width: 40%;
   }
-  .banner-image img {
-    width: 95%;
-    margin: 0 auto;
-  }
 
   .players-container,
   .video-container,
