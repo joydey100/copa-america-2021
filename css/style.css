@@ -29,6 +29,9 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 img {
   width: 100%;
@@ -93,10 +96,12 @@ header {
   background-image: url(../images/banner-image.png);
   background-position: top;
   background-size: cover;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 1440px;
+  max-width: 100%;
+  margin: 0 auto;
   padding: 15px 0;
   z-index: 9999999;
 }
@@ -138,6 +143,7 @@ Main Start
   background-image: url(../images/banner-image.png);
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 .banner-text h2 {
   font-size: 64px;
@@ -145,7 +151,7 @@ Main Start
   font-weight: 700;
   margin-bottom: 27px;
 }
-.footer-img img {
+.banner-footer-img img {
   position: absolute;
   bottom: 0;
   left: -5%;
@@ -382,7 +388,7 @@ Responsive Design with media query
   .news-container {
     grid-template-columns: repeat(2, 1fr);
   }
-  .footer-img img {
+  .banner-footer-img img {
     width: 30%;
   }
   .highlighted-image {
@@ -405,7 +411,7 @@ Responsive Design with media query
   .banner-text h2 {
     font-size: 45px; /* In figma, it was 36px but it not  looking good in 650-688px*/
   }
-  .footer-img img {
+  .banner-footer-img img {
     width: 40%;
   }
   .banner-image img {
