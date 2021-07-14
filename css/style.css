@@ -83,6 +83,7 @@ Header Start
 ======================= */
 header {
   background-image: url(../images/banner-image.png);
+  background-position: top;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -97,7 +98,7 @@ header {
   align-items: center;
 }
 .logo a img {
-  width: 21%;
+  width: 23%;
 }
 nav ul {
   display: flex;
@@ -107,7 +108,7 @@ nav ul li {
 }
 nav ul li a {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--main-white);
 }
 .toggle-menu {
@@ -128,12 +129,19 @@ Main Start
   padding: 150px 0;
   background-image: url(../images/banner-image.png);
   background-size: cover;
+  position: relative;
 }
 .banner-text h2 {
   font-size: 64px;
   color: var(--main-white);
   font-weight: 700;
   margin-bottom: 27px;
+}
+.footer-img img {
+  position: absolute;
+  bottom: 0;
+  left: -5%;
+  width: 20%;
 }
 
 /* ===== Player Section ===== */
@@ -183,6 +191,19 @@ Main Start
   font-size: 16px;
   color: var(--main-text);
   margin-bottom: 24px;
+}
+
+/* ===== Video Section ===== */
+.video-section {
+  padding: 90px 0;
+}
+.video-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+}
+.video h2 {
+  margin: 8px 0;
 }
 
 /* =======================
