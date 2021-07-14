@@ -150,10 +150,25 @@ Main Start
   left: -5%;
   width: 20%;
 }
+.banner-section:hover .banner-image {
+  animation: float 2.2s ease-in-out infinite;
+  -webkit-animation: float 2.2s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
 
 /* ===== Player Section ===== */
 .player-section {
-  margin-top: 70px;
+  padding-top: 70px;
 }
 .players-container {
   display: grid;
@@ -281,7 +296,7 @@ Footer Start
 footer {
   background-image: url(../images/banner-image.png);
   background-size: cover;
-  padding: 60px 0;
+  padding: 90px 0 60px;
 }
 .footer-content {
   display: flex;
