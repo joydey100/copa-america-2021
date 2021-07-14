@@ -150,6 +150,10 @@ Main Start
   left: -5%;
   width: 20%;
 }
+.banner-image img {
+  width: 556px;
+  max-width: 100%;
+}
 .banner-section:hover .banner-image {
   animation: float 2.2s ease-in-out infinite;
   -webkit-animation: float 2.2s ease-in-out infinite;
@@ -348,4 +352,98 @@ footer {
 }
 /* =======================
 Footer End
-======================= */ ;
+======================= */
+
+/* =======================
+Responsive Design with media query
+======================= */
+
+/* Design for Tablet Device */
+
+@media only screen and (max-width: 992px) {
+  .logo a img {
+    width: 30%;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .menu {
+    display: none;
+  }
+  .toggle-menu {
+    display: block;
+    cursor: pointer;
+  }
+  .banner-image {
+    margin-top: 50px;
+  }
+  .players-container,
+  .news-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer-img img {
+    width: 30%;
+  }
+  .highlighted-image {
+    margin-top: 40px;
+  }
+  .video-container {
+    grid-template-columns: 1fr;
+  }
+  .footer-logo {
+    width: 48%;
+  }
+}
+
+/* Design For mobile Device */
+@media only screen and (max-width: 688px) {
+  .d-flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-text h2 {
+    font-size: 45px; /* In figma, it was 36px but it not  looking good in 650-688px*/
+  }
+  .footer-img img {
+    width: 40%;
+  }
+  .banner-image img {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .players-container,
+  .video-container,
+  .news-container,
+  .gallery-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 24px;
+  }
+  .player-section {
+    padding-top: 50px;
+  }
+  .highlighted-text h2 {
+    font-size: 30px;
+  }
+  .highlighted-image {
+    margin-top: 30px;
+  }
+  .video-section,
+  .latest-news-section {
+    padding: 50px 0;
+  }
+  .gallery-1 {
+    grid-column: span 1;
+    height: 100%;
+  }
+  .video h2 {
+    font-size: 19px;
+  }
+  .footer-logo {
+    width: 70%;
+    margin-bottom: 50px;
+  }
+  .logo a img {
+    width: 41%;
+  }
+}
